@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Esercizi For</title>
+    <meta name="author" content="Silvia Rivella">
+    <meta name="description" content="Esercizi form e tabelle">
+</head>
+<body>
+    <section name="dati anagrafici">
+        <form action="">
+            <fieldset>
+                <legend>Informazioni Personali</legend>
+                <table border="1">
+                    <tr>
+                        <td>
+                            <label for="picture">Foto personale</label>
+                            <br /><br />
+                            <input type="file" name="picture" id="picture"/>
+                        </td>
+                         <td>
+                            <label for="firstname">Nome</label>
+                            <br /><br />
+                            <input type="text" name="firstname" id="firstname" required="" />
+                        </td>
+                         <td>
+                            <label for="lastname">Cognome</label>
+                            <br /><br />
+                            <input type="text" name="lastname" id="lastname" required="" />
+                        </td>
+                        <td>
+                            <label for="role">Ruolo</label>
+                            <br /><br />
+                            <input type="text" name="role" id="role" />
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nationality">Nazionalità</label>
+                        <br /><br />
+                        <input type="text" name="nationality" id="nationality" />
+                    </td>
+                    <td>
+                        <label for="age">Età</label>
+                        <br /><br />
+                        <input type="number" name="age" id="age" min="16" />
+                    </td>
+                    <td>
+                        <label for="birthdate">Data di nascita</label>
+                        <br /><br />
+                        <input type="date" name="birthdate" id="birthdate" />
+                    </td>
+                    <td>
+                        <label for="address"></label>
+                        <br /><br />
+                        <input type="text" name="address" id="address" />
+                    </td>
+                    <td>
+                        <label for="address_number"></label>
+                        <br /><br />
+                        <input type="number" name="address_number" id="address_number" minlength="1" maxlength="10" />
+                    </td>
+                    <td>
+                        <label for="cap">CAP</label>
+                        <br /><br />
+                        <input type="number" name="cap" id="cap" max="5" />
+                    </td>
+                    <td>
+                        <label for="city">Città</label>
+                        <br /><br />
+                        <input type="text" name="city" id="city" />
+                    </td>
+                    <td>
+                        <label for="region">Provincia</label>
+                        <br /><br />
+                        <input type="text" name="region" id="region" />
+                    </td>                
+                </tr>
+                <tr>    
+                    <td>
+                        <label for="phone_number"></label>
+                        <br /><br />
+                        <input type="text" name="phone_number" id="phone_number" />
+                        <!-- aggiungere attributo pattern -->
+                    </td>
+                    <td>
+                        <label for="mobile_number"></label>
+                        <br /><br />
+                        <input type="text" name="mobile_number" id="mobile_number" />
+                         <!-- aggiungere attributo pattern -->
+                    </td>
+                    <td>
+                        <label for="email">Email</label>
+                        <br /><br />
+                        <input type="email" name="email" id="email" maxlength="" />
+                    </td>
+                    <td>
+                        <label for="website">Sito</label>
+                        <br /><br />
+                        <input type="url" name="website" id="website" pattern="" />
+                    </td>
+                    <!-- aggiungere social networks? -->
+                </tr>
+            </table>
+        </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
