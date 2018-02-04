@@ -7,6 +7,11 @@
     <title>Generatore di CV europei</title>
     <meta name="author" content="Silvia Rivella">
     <meta name="description" content="Esercizi form e tabelle">
+    <style>
+        td{
+                padding:3px;
+            }
+    </style>
 </head>
 <body>
     <section name="dati anagrafici">
@@ -85,12 +90,165 @@
                     <td>
                         <label for="region">Provincia</label>
                         <br /><br />
-                        <input type="text" name="region" id="region" />
+                        <select name="region" id="region">
+                            <optgroup label="Abruzzo">
+                                    <option value="1">Chieti</option>
+                                    <option value="2">L'acquila</option>
+                                    <option value="3">Pescara</option>
+                                    <option value="4">Teramo</option>
+                            </optgroup>
+                            <optgroup label="Basilicata">
+                                    <option value="5">Matera</option>
+                                    <option value="6">Potenza</option>
+                            </optgroup>
+                            <optgroup label="Calabria">
+                                    <option value="7">Catanzaro</option>
+                                    <option value="8">Cosenza</option>
+                                    <option value="9">Crotone</option>
+                                    <option value="10">Reggio Calabria</option>
+                                    <option value="11">Vibo-Valentia</option>
+                            </optgroup>
+                            <optgroup label="Campania">
+                                    <option value="12">Avellino</option>
+                                    <option value="13">Benevento</option>
+                                    <option value="14">Caserta</option>
+                                    <option value="15">Napoli</option>
+                                    <option value="16">Salerno</option>
+                            </optgroup>
+                            <optgroup label="Emilia-Romagna">
+                                    <option value="17">Bologna</option>
+                                    <option value="18">Ferrara</option>
+                                    <option value="19">Forlì-Cesena</option>
+                                    <option value="20">Modena</option>
+                                    <option value="21">Parma</option>
+                                    <option value="17">Piacenza</option>
+                                    <option value="18">Ravenna</option>
+                                    <option value="19">Reggio-Emilia</option>
+                                    <option value="20">Rimini</option>
+                            </optgroup>
+                            <optgroup label="Friuli-Venezia Giulia">
+                                    <option value="21">Gorizia</option>
+                                    <option value="22">Pordenone</option>
+                                    <option value="23">Trieste</option>
+                                    <option value="24">Udine</option>
+                            </optgroup>
+                            <optgroup label="Lazio">
+                                    <option value="25">Frosinone</option>
+                                    <option value="26">Latina</option>
+                                    <option value="27">Rieti</option>
+                                    <option value="28">Roma</option>
+                                    <option value="29">Viterbo</option>
+                            </optgroup>
+                            <optgroup label="Liguria">
+                                    <option value="30">Genova</option>
+                                    <option value="31">Imperia</option>
+                                    <option value="32">La Spezia</option>
+                                    <option value="33">Savona</option>
+                            </optgroup>
+                            <optgroup label="Lombardia">
+                                    <option value="34">Bergamo</option>
+                                    <option value="35">Brescia</option>
+                                    <option value="36">Como</option>
+                                    <option value="37">Cremona</option>
+                                    <option value="38">Lecco</option>
+                                    <option value="39">Lodi</option>
+                                    <option value="40">Mantova</option>
+                                    <option value="41">Milano</option>
+                                    <option value="42">Monza e della Brianza</option>
+                                    <option value="43">Pavia</option>
+                                    <option value="44">Sondrio</option>
+                                    <option value="45">Varese</option>
+                            </optgroup>
+                            <optgroup label="Marche">
+                                    <option value="46">Ancona</option>
+                                    <option value="47">Ascoli-Piceno</option>
+                                    <option value="48">Fermo</option>
+                                    <option value="49">Macerata</option>
+                                    <option value="50">Pesaro e Urbino</option>
+                            </optgroup>
+                            <optgroup label="Molise">
+                                    <option value="51">Campobasso</option>
+                                    <option value="52">Isernia</option>
+                            </optgroup>
+                            <optgroup label="Piemonte">
+                                    <option value="53">Alessandria</option>
+                                    <option value="54">Asti</option>
+                                    <option value="55">Biella</option>
+                                    <option value="56">Cuneo</option>
+                                    <option value="57">Novara</option>
+                                    <option value="58">Torino</option>
+                                    <option value="59">Verbano-Cusio-Ossola</option>
+                                    <option value="60">Vercelli</option>
+                            </optgroup>
+                            <optgroup label="Puglia">
+                                    <option value="53">Bari</option>
+                                    <option value="54">Barletta-Andria-Trani</option>
+                                    <option value="55">Brindisi</option>
+                                    <option value="56">Foggia</option>
+                                    <option value="57">Lecce</option>
+                                    <option value="58">Taranto</option>
+                            </optgroup>
+                            <optgroup label="Sardegna">
+                                    <option value="53">Cagliari</option>
+                                    <option value="54">Carbonia-Iglesias</option>
+                                    <option value="55">Nuoro</option>
+                                    <option value="59">Ogliastra</option>
+                                    <option value="56">Olbia-Tempio</option>
+                                    <option value="57">Oristano</option>
+                                    <option value="58">Medio Campidano</option>
+                                    <option value="60">Sassari</option>
+                            </optgroup>
+                            <optgroup label="Sicilia">
+                                    <option value="53">Agrigento</option>
+                                    <option value="54">Caltanissetta</option>
+                                    <option value="55">Catania</option>
+                                    <option value="59">Enna</option>
+                                    <option value="56">Messina</option>
+                                    <option value="57">Palermo</option>
+                                    <option value="58">Ragusa</option>
+                                    <option value="60">Siracusa</option>
+                                    <option value="60">Trapani</option>
+                            </optgroup>
+                            <optgroup label="Toscana">
+                                    <option value="53">Arezzo</option>
+                                    <option value="54">Firenze</option>
+                                    <option value="55">Grosseto</option>
+                                    <option value="59">Livorno</option>
+                                    <option value="56">Lucca</option>
+                                    <option value="57">Massa-Carrara</option>
+                                    <option value="58">Pisa</option>
+                                    <option value="60">Pistoia</option>
+                                    <option value="60">Prato</option>
+                                    <option value="60">Siena</option>
+                            </optgroup>
+                            <optgroup label="Trentino-Alto Adige">
+                                    <option value="53">Bolzano</option>
+                                    <option value="54">Trento</option>
+                            </optgroup>
+                            <optgroup label="Umbria">
+                                    <option value="53">Perugia</option>
+                                    <option value="54">Terni</option>
+                            </optgroup>
+                            <optgroup label="Valle d'Aosta">
+                                    <option value="53">Aosta</option>
+                            </optgroup>
+                            <optgroup label="Veneto">
+                                    <option value="53">Belluno</option>
+                                    <option value="54">Padova</option>
+                                    <option value="55">Rovigos</option>
+                                    <option value="59">Treviso</option>
+                                    <option value="56">Venezia</option>
+                                    <option value="57">Verona</option>
+                                    <option value="58">Vicenza</option>
+                            </optgroup>                           
+
+                        
+                        </select>
                     </td>              
                     <td>
                         <label for="mobile_phone">Numero di cellulare</label>
                         <br /><br />
-                        <input type="text" name="mobile_phone" id="mobile_phone" pattern="" required="" />
+                        <input type="text" name="mobile_phone" id="mobile_phone" placeholder="Senza prefisso" pattern="" required="" />
                     </td>
                     <td>
                         <label for="email">Email</label>
