@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Esercizi For</title>
+    <title>Generatore di CV europei</title>
     <meta name="author" content="Silvia Rivella">
     <meta name="description" content="Esercizi form e tabelle">
 </head>
@@ -13,19 +13,14 @@
         <form action="">
             <fieldset>
                 <legend>Informazioni Personali</legend>
-                <table border="1">
+                <table>
                     <tr>
                         <td>
-                            <label for="picture">Foto personale</label>
-                            <br /><br />
-                            <input type="file" name="picture" id="picture"/>
-                        </td>
-                         <td>
                             <label for="firstname">Nome</label>
                             <br /><br />
                             <input type="text" name="firstname" id="firstname" required="" />
                         </td>
-                         <td>
+                        <td>
                             <label for="lastname">Cognome</label>
                             <br /><br />
                             <input type="text" name="lastname" id="lastname" required="" />
@@ -35,73 +30,78 @@
                             <br /><br />
                             <input type="text" name="role" id="role" />
                         </td>
-                </tr>
+                        <td>
+                            <label for="picture">Foto personale</label>
+                            <br /><br />
+                            <input type="file" name="picture" id="picture"/>
+                        </td>
+                    </tr>
                 <tr>
+                    <td>
+                        <label for="age">Et&agrave;</label>
+                        <br /><br />
+                        <input type="number" name="age" id="age" min="16" />
+                    </td>
+                    <td>   
+                        <label for="birthdate">Data di nascita</label>
+                        <br /><br />
+                        <input type="date" name="birthdate" id="birthdate" />
+                    </td>
                     <td>
                         <label for="nationality">Nazionalit&agrave;</label>
                         <br /><br />
                         <input type="text" name="nationality" id="nationality" />
                     </td>
                     <td>
-                        <label for="age">Et&agrave;</label>
+                        <label for="gender">Sesso</label>
                         <br /><br />
-                        <input type="number" name="age" id="age" min="16" />
+                        <label>F<input type="radio" name="gender" value="f" id="gender" /></label>
+                        <label>M<input type="radio" name="gender" value="m" id="gender" /></label>
                     </td>
+                <tr>
                     <td>
-                        <label for="birthdate">Data di nascita</label>
-                        <br /><br />
-                        <input type="date" name="birthdate" id="birthdate" />
-                    </td>
-                    <td>
-                        <label for="address"></label>
+                        <label for="address">Via</label>
                         <br /><br />
                         <input type="text" name="address" id="address" />
                     </td>
                     <td>
-                        <label for="address_number"></label>
+                        <label for="street_nunber">N°</label>
                         <br /><br />
-                        <input type="number" name="address_number" id="address_number" minlength="1" maxlength="10" />
+                        <input type="number" name="street_nunber" id="street_nunber" minlenght="1" />
                     </td>
                     <td>
-                        <label for="cap">CAP</label>
+                        <label for="postal_code">Cap</label>
                         <br /><br />
-                        <input type="number" name="cap" id="cap" max="5" />
+                        <input type="mumber" name="postal_code" id="postal_code" pattern="" />
                     </td>
                     <td>
                         <label for="city">Città</label>
                         <br /><br />
                         <input type="text" name="city" id="city" />
-                    </td>
+                    </td> 
+                      
+                </tr>
+                <tr>    
                     <td>
                         <label for="region">Provincia</label>
                         <br /><br />
                         <input type="text" name="region" id="region" />
-                    </td>                
-                </tr>
-                <tr>    
+                    </td>              
                     <td>
-                        <label for="phone_number"></label>
+                        <label for="mobile_phone">Numero di cellulare</label>
                         <br /><br />
-                        <input type="text" name="phone_number" id="phone_number" />
-                        <!-- aggiungere attributo pattern -->
+                        <input type="text" name="mobile_phone" id="mobile_phone" pattern="" required="" />
                     </td>
                     <td>
-                        <label for="mobile_number"></label>
+                        <label for="email">Email</label>
                         <br /><br />
-                        <input type="text" name="mobile_number" id="mobile_number" />
-                         <!-- aggiungere attributo pattern -->
-                    </td>
-                    <td>
-                        <label for="email">E-mail</label>
-                        <br /><br />
-                        <input type="email" name="email" id="email" maxlength="" />
+                        <input type="email" name="email" id="email" pattern="" required="" />
                     </td>
                     <td>
                         <label for="website">Sito</label>
                         <br /><br />
                         <input type="url" name="website" id="website" pattern="" />
                     </td>
-                    <!-- aggiungere social networks? -->
                 </tr>
             </table>
         </fieldset>
